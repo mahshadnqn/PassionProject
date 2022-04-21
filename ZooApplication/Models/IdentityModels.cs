@@ -37,5 +37,11 @@ namespace ZooApplication.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ZooApplication.Models.Wines> Wines { get; set; }
+
+        public System.Data.Entity.DbSet<ZooApplication.Models.Lists> Lists { get; set; }
+
+        public System.Data.Entity.DbSet<ZooApplication.Models.CSRs> CSRs { get; set; }
     }
 }

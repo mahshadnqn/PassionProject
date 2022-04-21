@@ -183,12 +183,15 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AnimalController.cs" />
     <Compile Include="Controllers\AnimalDataController.cs" />
+    <Compile Include="Controllers\CSRsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KeeperController.cs" />
     <Compile Include="Controllers\KeeperDataController.cs" />
+    <Compile Include="Controllers\ListsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SpeciesController.cs" />
     <Compile Include="Controllers\SpeciesDataController.cs" />
+    <Compile Include="Controllers\WinesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -216,10 +219,37 @@
     <Compile Include="Migrations\202105070424072_keepers-animals.Designer.cs">
       <DependentUpon>202105070424072_keepers-animals.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204212156439_wines.cs" />
+    <Compile Include="Migrations\202204212156439_wines.Designer.cs">
+      <DependentUpon>202204212156439_wines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204212202185_wines2022.cs" />
+    <Compile Include="Migrations\202204212202185_wines2022.Designer.cs">
+      <DependentUpon>202204212202185_wines2022.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204212206146_list-and-csrs.cs" />
+    <Compile Include="Migrations\202204212206146_list-and-csrs.Designer.cs">
+      <DependentUpon>202204212206146_list-and-csrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204212209286_newone.cs" />
+    <Compile Include="Migrations\202204212209286_newone.Designer.cs">
+      <DependentUpon>202204212209286_newone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204212226043_csr.cs" />
+    <Compile Include="Migrations\202204212226043_csr.Designer.cs">
+      <DependentUpon>202204212226043_csr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204212247112_second.cs" />
+    <Compile Include="Migrations\202204212247112_second.Designer.cs">
+      <DependentUpon>202204212247112_second.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\CSRs.cs" />
+    <Compile Include="Models\Lists.cs" />
+    <Compile Include="Models\Wines.cs" />
     <Compile Include="Models\Keeper.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Species.cs" />
@@ -305,6 +335,21 @@
     <Content Include="Views\Keeper\Error.cshtml" />
     <Content Include="Views\Keeper\List.cshtml" />
     <Content Include="Views\Keeper\New.cshtml" />
+    <Content Include="Views\Wines\Create.cshtml" />
+    <Content Include="Views\Wines\Delete.cshtml" />
+    <Content Include="Views\Wines\Details.cshtml" />
+    <Content Include="Views\Wines\Edit.cshtml" />
+    <Content Include="Views\Wines\Index.cshtml" />
+    <Content Include="Views\Lists\Create.cshtml" />
+    <Content Include="Views\Lists\Delete.cshtml" />
+    <Content Include="Views\Lists\Details.cshtml" />
+    <Content Include="Views\Lists\Edit.cshtml" />
+    <Content Include="Views\Lists\Index.cshtml" />
+    <Content Include="Views\CSRs\Create.cshtml" />
+    <Content Include="Views\CSRs\Delete.cshtml" />
+    <Content Include="Views\CSRs\Details.cshtml" />
+    <Content Include="Views\CSRs\Edit.cshtml" />
+    <Content Include="Views\CSRs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -340,6 +385,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105070424072_keepers-animals.resx">
       <DependentUpon>202105070424072_keepers-animals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204212156439_wines.resx">
+      <DependentUpon>202204212156439_wines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204212202185_wines2022.resx">
+      <DependentUpon>202204212202185_wines2022.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204212206146_list-and-csrs.resx">
+      <DependentUpon>202204212206146_list-and-csrs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204212209286_newone.resx">
+      <DependentUpon>202204212209286_newone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204212226043_csr.resx">
+      <DependentUpon>202204212226043_csr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204212247112_second.resx">
+      <DependentUpon>202204212247112_second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
